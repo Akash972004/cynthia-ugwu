@@ -3,10 +3,20 @@
   padding: 0px;
   font-family: "General sans";
 }
-.main {
+#minicircle {
+  transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 99999;
+  border-radius: 50%;
+  background-color: #fff;
+}
+#main {
   width: 100%;
   background-color: black;
 }
+
 .hero {
   position: relative;
   height: 100vh;
@@ -23,8 +33,9 @@
 .nav a {
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 17px;
+  font-weight: 500;
+  word-spacing: 7;
 }
 .heading {
   padding: 90px 40px;
@@ -45,12 +56,15 @@
 .head2 {
   width: fit-content;
 }
-
 .head2 {
   margin-left: 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
-.head2 p {
+.head2 h5 {
   text-align: right;
+  margin-top: 6px;
 }
 .heading3 {
   color: #fff;
@@ -59,6 +73,9 @@
   margin-top: 3vw;
   font-size: 1.3vw;
   line-height: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
 }
 #herofooter {
   padding: 0 2vw;
@@ -123,10 +140,12 @@
 .lcontainer {
   height: 100vh;
   background-color: black;
+  width: 100%;
 }
 .about {
   padding: 10vw 10vw;
   padding-left: 30vw;
+
   color: #fff;
   display: flex;
   justify-content: center;
@@ -141,6 +160,8 @@
   margin-left: 50px;
   width: 25rem;
   line-height: 4;
+  width: 450px;
+  height: 30vh;
 }
 .info .para {
   color: #888;
@@ -148,6 +169,7 @@
 }
 .info p {
   line-height: 1.7;
+  font-size: 1.2vw;
 }
 .info a {
   margin-top: 100px;
@@ -174,6 +196,50 @@
   color: #fff;
   text-decoration: none;
   font-weight: 500;
+}
+
+@media screen and (max-width: 600px) {
+  .lcontainer {
+    background-color: black;
+    width: 74vh;
+  }
+  .about {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+  }
+  .about img{
+    margin-left: 0px;
+  }
+  .info {
+   
+    margin-left: 00px;
+    width: 25rem;
+    line-height: 4;
+    width: 450px;
+    height: 30vh;
+  }
+  .info .para {
+    color: #888;
+    font-size: 2vh;
+  }
+  .info p {
+    line-height: 1.7;
+    font-size: 3.3vw;
+  }
+  .info a {
+    margin-top: 100px;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid white;
+    border-radius: 100px;
+    padding: 7px 15px;
+  }
+  .subscribe {
+    padding-left: 10vw;
+    margin-top: 50px;
+    line-height: 2;
+  }
 }
 .footer {
   height: 10vh;
