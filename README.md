@@ -11,17 +11,15 @@ Check out the live version here: [https://akash972004.github.io/cynthia-ugwu/](h
 - Smooth scroll-based animations
 - Creative cursor interactions
 - Animated page transitions
-- Responsive design
 - Lightweight and fast performance
 
 ## 🛠️ Built With
 
 - **HTML5**
 - **CSS3** (including animations and transitions)
-- **JavaScript 
+- **JavaScript**
 - **Locomotive Scroll** for smooth scrolling effects
 
-- 
 ## 📸 Screenshots
 
 ![cynthia](https://github.com/user-attachments/assets/be7b2411-b234-4d45-b2e0-26b4d1a73900)
